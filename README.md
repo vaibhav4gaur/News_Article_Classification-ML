@@ -1,4 +1,4 @@
-# 📰 Fake News Detection Using Machine Learning
+# 📰 News Article Classification
 
 ## 🔍 Overview
 The spread of fake news on the internet is a big problem today. This project aims to create a machine-learning model that can tell whether a news article is fake or real. We use different techniques to analyze and understand the text in these articles. Our dataset includes articles that are already labeled as 'fake' or 'real', which helps us train and test our model.
@@ -9,11 +9,11 @@ The main goal is to accurately classify news articles as either 'fake' or 'real'
 
 ## 📄 Dataset
 
-The dataset used in this project is sourced from the [Dataset](https://www.kaggle.com/datasets/emineyetm/fake-news-detection-datasets). It includes a balanced set of labeled news articles, which consist of the following features:
+The dataset used in this project is sourced from the [Dataset](https://www.kaggle.com/datasets/mahdimashayekhi/fake-news-detection-dataset). It includes a balanced set of labeled news articles, which consist of the following features:
 
 - **Title**: The headline of the news article.
 - **Text**: The full-text content of the news article.
-- **Label**: 1 for fake news and 0 for real news.
+- **Label**: 0 for fake news and 1 for real news.
 
 ## 📋 Methodology
 
@@ -41,32 +41,20 @@ The dataset used in this project is sourced from the [Dataset](https://www.kaggl
 ## ✅ Requirements
 
 - **Python 3.x**
-- **Libraries**: pandas, numpy, scikit-learn, nltk, matplotlib, seaborn, Streamlit (optional), etc.
+- **Libraries**: pandas, numpy, scikit-learn, nltk, matplotlib, seaborn, Streamlit etc.
 
 ## 🌐 The Web Interface
-![WhatsApp Image 2024-06-25 at 22 58 42_6c529be6](https://github.com/jicsjitu/Fake_News_Using_ML/assets/162569175/1dc301d6-337a-4b87-a984-21bdc0fa9402)
+<img width="1431" height="700" alt="Screenshot 2025-07-24 at 19 01 57" src="https://github.com/user-attachments/assets/a748ee46-27b4-44b4-bde6-eee6853c7c51" />
 
 ## 🧪 Testing Model
 i. **For True News** 
+<img width="1379" height="708" alt="Screenshot 2025-07-24 at 19 04 00" src="https://github.com/user-attachments/assets/d987d181-ea2b-47df-a05c-c4f2cf3da9b1" />
 
-![WhatsApp Image 2024-06-25 at 23 02 17_7eb13c2b](https://github.com/jicsjitu/Fake_News_Using_ML/assets/162569175/50abbd22-91d8-46fa-bba6-d56bc1ccdcc6)
 
 ii. **For Fake News**
+<img width="1345" height="662" alt="Screenshot 2025-07-24 at 19 16 14" src="https://github.com/user-attachments/assets/32cd997b-db3f-4682-a82d-5bd000d8f309" />
 
-![WhatsApp Image 2024-06-25 at 23 03 56_1155faec](https://github.com/jicsjitu/Fake_News_Using_ML/assets/162569175/77174024-0819-4409-b2dc-291899009645)
 
-## 🖥️ Usage
-
-i. **Clone the repository**:
-   ```bash
-   git clone https://github.com/jicsjitu/Fake_News_Using_ML.git
-   cd Fake_News_Detection_Using_ML
-   ```
-
-ii. **Install the required libraries**:
-   ```bash
-   pip install -r requirements.txt
-   ```
 
 ## 📁 Files in the Repository
 
@@ -74,7 +62,7 @@ Certainly! Here’s a simple description of each file and folder in the reposito
 
 ### i. README.md
 
-This is the file you’re currently reading. It provides an overview of the project, how to set it up, use it, and other essential information about the fake news detection project.
+This is the file you’re currently reading. It provides an overview of the project, how to set it up, use it, and other essential information about the NewsArticleClassification project.
 
 ### ii. Visualizations Folder
 
@@ -87,15 +75,15 @@ This folder contains various charts, graphs, and plots that help visualize data 
 
 This Python script is the main application file for predicting whether news articles are fake or real. It uses the trained machine learning model to classify new articles based on their text content. 
 
-### iv. Fake.csv
+### iv. fake.csv
 
 This file contains the data of fake news articles used for training and testing our model. Each row represents an article labeled as fake, along with its title and content.
 
-### v. True.csv
+### v. true.csv
 
-This file holds the data of real news articles. Similar to `Fake.csv`, it includes articles that are labeled as real, along with their title and content.
+This file holds the data of real news articles. Similar to `true.csv`, it includes articles that are labeled as real, along with their title and content.
 
-### vi. fake_news_detection_code.ipynb
+### vi. FakeNewsPredictor.ipynb
 
 This is a Jupyter notebook that includes the complete code for our project. It covers:
 - Data preprocessing steps like cleaning and preparing the text.
@@ -106,30 +94,6 @@ This is a Jupyter notebook that includes the complete code for our project. It c
 
 This file is used for manually testing our model. It contains a small set of news articles that you can use to see how well the model predicts fake or real news. It’s helpful for checking the model’s performance on new, unseen data.
 
-### viii. Fake_News_Detection_Using_ML.pptx
 
-This is a PowerPoint presentation that explains the project. It includes slides on the problem of fake news, how we approached the solution, the data and methods we used, the results we achieved, and the impact of our work. It's perfect for sharing our findings with others.
 
-### ix. requirements.txt
 
-This file lists all the Python libraries and packages needed to run the project. By installing these dependencies, you can ensure your environment is set up correctly to execute the code and scripts in this project. 
-
-## 📈 Results
-
-Our best-performing model achieved the following metrics:
-- **Accuracy**: 99%
-- **Precision**: 99%
-- **Recall**: 99%
-- **F1 Score**: 99%
-
-## 👤 Credits
-
-- **Dataset**: [Dataset](https://www.kaggle.com/datasets/emineyetm/fake-news-detection-datasets)
-
-## 💬 Feedback and Questions
-
-If you have any feedback or questions about the project, please feel free to ask. We appreciate your input and are here to help. You can reach out by opening an issue on GitHub or by emailing me at jitukumar9387@gmail.com.
-
-Thank you for exploring the Fake News Detection Project! We hope you find it useful and informative.
-
-Happy coding!
