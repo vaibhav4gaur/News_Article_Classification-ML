@@ -8,6 +8,12 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 import streamlit as st
 
+try:
+    import nltk
+except ModuleNotFoundError as e:
+    import streamlit as st
+    st.error(f"NLTK not found: {e}")
+
 
 # Streamlit page configuration
 st.set_page_config(page_title="News Article Classification", layout="wide")
