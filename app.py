@@ -1,6 +1,6 @@
-import nltk
 import pandas as pd
 import re
+import nltk
 from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
 from sklearn.feature_extraction.text import TfidfVectorizer
